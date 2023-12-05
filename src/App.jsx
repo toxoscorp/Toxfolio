@@ -20,6 +20,8 @@ function App() {
       </div>
 
       <Card imageSrc="https://picsum.photos/200/300" title="Card 1" />
+      <Card imageSrc="https://picsum.photos/200/300" title="Card 1" />
+      <Card imageSrc="https://picsum.photos/200/300" title="Card 3" />
 
       <h1>Vite + React</h1>
       <div className="card">
