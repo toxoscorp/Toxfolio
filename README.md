@@ -24,4 +24,4 @@ To run the project locally, follow these steps:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
+This project is licensed under the [GNU General Public License v3.0 (GPL-3.0)](LICENSE).
