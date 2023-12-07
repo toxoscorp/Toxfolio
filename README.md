@@ -25,3 +25,9 @@ To run the project locally, follow these steps:
 ## License
 
 This project is licensed under the [GNU General Public License v3.0 (GPL-3.0)](LICENSE).
+
+The content and design of the website are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
+
+### License for Libraries
+
+The libraries used in this project are also subject to their respective licenses. Please refer to the documentation and source code of each library for more information.
