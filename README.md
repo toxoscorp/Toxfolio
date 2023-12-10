@@ -5,8 +5,8 @@ This repository contains the source code for my personal portfolio website. The 
 
 To run the project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/tristanrobichaud/portfolio.git`
-2. Navigate to the project directory: `cd portfolio`
+1. Clone the repository: `git clone https://github.com/toxoscorp/Toxfolio.git`
+2. Navigate to the project directory: `cd Toxfolio`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
 
