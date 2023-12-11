@@ -22,3 +22,10 @@
     padding: 0;
     margin: 0;
 }
+
+.cards p {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    color: red;
+}
