@@ -46,6 +46,8 @@
     bottom: 0;
     left: 0;
     width: 101vw;
-    height: 25%; /* Adjust this value to change the height of the fade */
+    height: 50%; /* Adjust this value to change the height of the fade */
     background: linear-gradient(transparent, #242424); /* Adjust the colors to match your design */
+
+    z-index: -1;
 }
