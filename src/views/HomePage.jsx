@@ -24,9 +24,9 @@ const HomePage = () => {
 
   return (
     <div className='home'>
-        <div className='background'>
-          <div className='light'></div>
-        </div>
+      <div className='background'>
+        <div className='light'></div>
+      </div>
       <h1>Welcome to the Home Page!</h1>
       <p>This is a simple React + Vite home page.</p>
     </div>
