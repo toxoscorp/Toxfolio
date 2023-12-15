@@ -11,11 +11,3 @@
     color: var(--color-white);
     margin: 0;
 }
-
-.navBar__menu img  {
-    height: 2rem;
-}
-
-.navBar__links {
-    display: none;
-}
