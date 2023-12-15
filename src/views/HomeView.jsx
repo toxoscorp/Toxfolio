@@ -10,7 +10,7 @@ function HomeView() {
   return (
     <>
         <div className='home'>
-            <NavBar />
+            {/* <NavBar /> */}
             <TitleSub title='Tristan Robichaud' subtitle='Software Engeneering,Devlopper' direction='right' />
         </div>
         <div className='background'>
