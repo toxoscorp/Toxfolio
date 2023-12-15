@@ -9,8 +9,8 @@ import NavBar from '../components/NavBar'
 function HomeView() {
   return (
     <>
+        <div className='nav'><NavBar /></div>
         <div className='home'>
-            {/* <NavBar /> */}
             <TitleSub title='Tristan Robichaud' subtitle='Software Engeneering,Devlopper' direction='right' />
         </div>
         <div className='background'>

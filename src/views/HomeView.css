@@ -6,6 +6,14 @@
     padding: 5%;
 }
 
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 96%;
+    padding: 2%;
+}
+
 .background {
     overflow: hidden;
     position: absolute;
