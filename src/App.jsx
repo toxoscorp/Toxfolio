@@ -1,19 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-
+import React from 'react'
 import './App.css'
 
-import HomePage from './views/HomePage'
-
 function App() {
-  console.log(window.location.pathname);
-
   return (
     <>
-      <div className='app'>
-        <HomePage />
-      </div>
     </>
   )
 }
