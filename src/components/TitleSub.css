@@ -1,0 +1,38 @@
+.title__line {
+    width: 5px;
+    height: 100px;
+    background-color: var(--color-lighter);
+    margin: 10px;
+}
+
+.titleSub {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titles h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+
+    text-align: var(--title-direction);
+
+    color: var(--color-light);
+}
+
+.titles h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+
+    text-align: var(--title-direction);
+
+    color: var(--color-lighter);
+}
