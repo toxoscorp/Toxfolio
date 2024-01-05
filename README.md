@@ -1,33 +1,29 @@
-# Portfolio - Tristan Robichaud
-This repository contains the source code for my personal portfolio website. The website is built using React, SWC, and Vite.
+# Toxfolio
 
-## Installation
+This template should help get you started developing with Vue 3 in Vite.
 
-To run the project locally, follow these steps:
+## Recommended IDE Setup
 
-1. Clone the repository: `git clone https://github.com/toxoscorp/Toxfolio.git`
-2. Navigate to the project directory: `cd Toxfolio`
-3. Install dependencies: `npm install`
-4. Start the development server: `npm run dev`
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Features
+## Customize configuration
 
-- Showcase of my projects and skills
-- Contact form for reaching out to me
-- Responsive design for optimal viewing on different devices
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Technologies Used
+## Project Setup
 
-- React
-- SWC
-- Vite
+```sh
+npm install
+```
 
-## License
+### Compile and Hot-Reload for Development
 
-This project is licensed under the [GNU General Public License v3.0 (GPL-3.0)](LICENSE).
+```sh
+npm run dev
+```
 
-The content and design of the website are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
+### Compile and Minify for Production
 
-### License for Libraries
-
-The libraries used in this project are also subject to their respective licenses. Please refer to the documentation and source code of each library for more information.
+```sh
+npm run build
+```
