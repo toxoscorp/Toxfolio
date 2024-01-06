@@ -19,7 +19,7 @@ import { RouterLink } from 'vue-router'
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--color-background);
 
     padding: 5vh;
 
