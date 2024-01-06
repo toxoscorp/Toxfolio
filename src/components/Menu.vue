@@ -11,16 +11,31 @@ import { RouterLink } from 'vue-router'
 <template>
     <div class="menu">
         <button @click="toggleMenu">Menu</button>
-        <div v-if="menuOpen" class="menu-list">
-            <ul>
-                <li><RouterLink to="/" @click="toggleMenu">Home</RouterLink></li>
-                <li><RouterLink to="/about" @click="toggleMenu">About</RouterLink></li>
-            </ul>
-        </div>
+        <Transition name="slide-fade">
+            <div v-if="menuOpen" class="menu-list" @click="toggleMenu">
+                <ul>
+                    <li><RouterLink to="/">Home</RouterLink></li>
+                    <li><RouterLink to="/about">About</RouterLink></li>
+                </ul>
+            </div>
+        </Transition>
     </div>
 </template>
 
 <style scoped>
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(100vw);
+  opacity: 0;
+}
 .menu-list {
     position: absolute;
     top: 0;
