@@ -17,7 +17,7 @@ window.addEventListener('keydown', (e) => {
 
 <template>
     <nav>
-        <button @click="toggleMenu">Menu</button>
+        <img alt="Menu" class="menu-btn" src="@/assets/menu.svg" width="25" height="25" @click="toggleMenu"/>
         <RouterLink to="/">Toxfolio</RouterLink>
     </nav>
     <Transition name="slide-fade">
