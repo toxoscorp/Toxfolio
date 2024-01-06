@@ -21,7 +21,7 @@ defineProps({
 
 h1 {
   font-weight: 400;
-  font-size: 4.5rem;
+  font-size: 6rem;
   position: relative;
   color: var(--color-heading);
 }
