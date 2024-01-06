@@ -23,6 +23,7 @@ h1 {
   font-weight: 400;
   font-size: 4.5rem;
   position: relative;
+  color: var(--color-heading);
 }
 
 h3 {

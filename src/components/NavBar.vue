@@ -19,7 +19,7 @@ window.addEventListener('keydown', (e) => {
 <template>
     <nav>
         <!-- <img alt="Menu" class="menu-btn" src="@/assets/menu.svg" width="25" height="25" @click="toggleMenu"/> -->
-        <IconMenu class="menu-btn" @click="toggleMenu" style="stroke: antiquewhite;" />
+        <IconMenu class="menu-btn" @click="toggleMenu" />
         <RouterLink to="/">Toxfolio</RouterLink>
     </nav>
     <Transition name="slide-fade">
@@ -28,6 +28,14 @@ window.addEventListener('keydown', (e) => {
 </template>
 
 <style scoped>
+a {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: var(--color-heading);
+    text-decoration: none;
+}
 nav {
     position: fixed;
     top: 0;
@@ -35,7 +43,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: 2.5rem 1rem;
     height: 3rem;
     width: 100%;
     font-size: 12px;
