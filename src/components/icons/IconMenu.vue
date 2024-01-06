@@ -1,7 +1,7 @@
 <template>
 <svg
-   width="50px"
-   height="50px"
+   width="40"
+   height="40"
    viewBox="0 0 50 50"
    version="1.1"
    id="svg1"
@@ -16,21 +16,21 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill-opacity:0;stroke:var(--color-heading);stroke-width:1;"
+       style="fill-opacity:0;stroke:var(--color-heading);stroke-width:2;"
        id="rect1"
        width="49.057316"
        height="9.0573149"
        x="0.4713425"
        y="0.4713425" />
     <rect
-       style="fill-opacity:0;stroke:var(--color-heading);stroke-width:1;"
+       style="fill-opacity:0;stroke:var(--color-heading);stroke-width:2;"
        id="rect2"
        width="49.057316"
        height="9.0573149"
        x="0.4713425"
        y="20.471342" />
     <rect
-       style="fill-opacity:0;stroke:var(--color-heading);stroke-width:1;"
+       style="fill-opacity:0;stroke:var(--color-heading);stroke-width:2;"
        id="rect3"
        width="49.057316"
        height="9.0573149"
