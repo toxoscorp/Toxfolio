@@ -86,11 +86,42 @@ body {
 }
 
 body {
-  --grid-size: 3rem;
+  --grid-size: calc(2.5vw);
   --grid-color: var(--color-border);
   background-image:
     linear-gradient(90deg, var(--grid-color) 1px, transparent 0),
     linear-gradient(var(--grid-color) 1px, transparent 0);
   background-size: var(--grid-size) var(--grid-size);
   background-position: calc(var(--grid-size) / 2) calc(var(--grid-size) / 2);
+}
+
+@media (max-width: 1500px) {
+  body {
+    --grid-size: calc(3vw);
+  }
+}
+@media (max-width: 1200px) {
+  body {
+    --grid-size: calc(4vw);
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    --grid-size: calc(5vw);
+  }
+}
+@media (max-width: 800px) {
+  body {
+    --grid-size: calc(6vw);
+  }
+}
+@media (max-width: 600px) {
+  body {
+    --grid-size: calc(7vw);
+  }
+}
+@media (max-width: 400px) {
+  body {
+    --grid-size: calc(8vw);
+  }
 }
