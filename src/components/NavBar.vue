@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import Menu from './Menu.vue'
+import IconMenu from "./icons/IconMenu.vue"
 
 import { ref } from 'vue'
 const menuOpen = ref(false)
@@ -17,7 +18,8 @@ window.addEventListener('keydown', (e) => {
 
 <template>
     <nav>
-        <img alt="Menu" class="menu-btn" src="@/assets/menu.svg" width="25" height="25" @click="toggleMenu"/>
+        <!-- <img alt="Menu" class="menu-btn" src="@/assets/menu.svg" width="25" height="25" @click="toggleMenu"/> -->
+        <IconMenu class="menu-btn" @click="toggleMenu" style="stroke: antiquewhite;" />
         <RouterLink to="/">Toxfolio</RouterLink>
     </nav>
     <Transition name="slide-fade">
@@ -35,8 +37,6 @@ nav {
     align-items: center;
     padding: 0 1rem;
     height: 3rem;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     font-size: 12px;
     text-align: center;
