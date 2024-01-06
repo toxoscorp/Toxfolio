@@ -35,7 +35,7 @@ defineProps({
     text-decoration: none;
     color: var(--color-text);
     background-color: var(--color-background-soft);
-    margin: 0 10px;
+    margin: 0 10px 0 0;
     padding: 10px;
     border-radius: 5px;
     transition: 0.2s;

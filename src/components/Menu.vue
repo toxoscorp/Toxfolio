@@ -7,6 +7,7 @@ import { RouterLink } from 'vue-router'
                 <ul>
                     <li><RouterLink to="/">Home</RouterLink></li>
                     <li><RouterLink to="/about">About</RouterLink></li>
+                    <li><RouterLink to="/myLife">My Life</RouterLink></li>
                 </ul>
         </div>
 </template>
@@ -21,7 +22,7 @@ import { RouterLink } from 'vue-router'
     width: 100%;
     background-color: var(--color-background);
 
-    padding: 5vh;
+    padding: 10vh;
 
     z-index: 1;
 }
@@ -32,7 +33,7 @@ import { RouterLink } from 'vue-router'
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 90vh;
+    height: 80vh;
 }
 .menu-list ul li {
     padding: 0.5rem 1rem;

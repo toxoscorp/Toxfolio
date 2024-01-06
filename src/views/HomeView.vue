@@ -9,3 +9,13 @@ import SocialMediaBar from '@/components/SocialMediaBar.vue';
     <Title msg="Tristan Robichaud" subMsg="Software Engineer Student At The University of Ottawa" />
   </main>
 </template>
+
+<style scoped>
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 80vw;
+}
+</style>
