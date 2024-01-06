@@ -1,25 +1,27 @@
 # Portfolio - Tristan Robichaud
-This repository contains the source code for my personal portfolio website. The website is built using React, SWC, and Vite.
+This repository contains the source code for my personal portfolio website. The website is built using VueJS.
 
-## Installation
+## Project Setup
 
-To run the project locally, follow these steps:
+```sh
+npm install
+```
 
-1. Clone the repository: `git clone https://github.com/toxoscorp/Toxfolio.git`
-2. Navigate to the project directory: `cd Toxfolio`
-3. Install dependencies: `npm install`
-4. Start the development server: `npm run dev`
+### Compile and Hot-Reload for Development
 
-## Features
+```sh
+npm run dev
+```
 
-- Showcase of my projects and skills
-- Contact form for reaching out to me
-- Responsive design for optimal viewing on different devices
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
 
 ## Technologies Used
 
-- React
-- SWC
+- VueJS
 - Vite
 
 ## License
