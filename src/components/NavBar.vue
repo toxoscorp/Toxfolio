@@ -12,7 +12,7 @@ import Menu from './Menu.vue'
 
 <style scoped>
 nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -25,5 +25,6 @@ nav {
     width: 100%;
     font-size: 12px;
     text-align: center;
+    z-index: 1;
 }
 </style>
