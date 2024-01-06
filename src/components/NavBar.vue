@@ -1,13 +1,22 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import Menu from './Menu.vue'
+
+import { ref } from 'vue'
+const menuOpen = ref(false)
+function toggleMenu() {
+    menuOpen.value = !menuOpen.value
+}
 </script>
 
 <template>
     <nav>
-        <Menu />
+        <button @click="toggleMenu">Menu</button>
         <RouterLink to="/">Toxfolio</RouterLink>
     </nav>
+    <Transition name="slide-fade">
+        <Menu v-if="menuOpen" @click="toggleMenu" />
+    </Transition>
 </template>
 
 <style scoped>
@@ -25,6 +34,19 @@ nav {
     width: 100%;
     font-size: 12px;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
+}
+.slide-fade-enter-active {
+  transition: all 0.2s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(-100vw);
+  /* opacity: 0; */
 }
 </style>

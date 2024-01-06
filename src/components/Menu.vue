@@ -1,41 +1,17 @@
 <script setup>
-import { ref } from 'vue'
-const menuOpen = ref(false)
-function toggleMenu() {
-    menuOpen.value = !menuOpen.value
-}
-
 import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-    <div class="menu">
-        <button @click="toggleMenu">Menu</button>
-        <Transition name="slide-fade">
-            <div v-if="menuOpen" class="menu-list" @click="toggleMenu">
+        <div class="menu-list">
                 <ul>
                     <li><RouterLink to="/">Home</RouterLink></li>
                     <li><RouterLink to="/about">About</RouterLink></li>
                 </ul>
-            </div>
-        </Transition>
-    </div>
+        </div>
 </template>
 
 <style scoped>
-.slide-fade-enter-active {
-  transition: all 0.3s ease-out;
-}
-
-.slide-fade-leave-active {
-  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
-}
-
-.slide-fade-enter-from,
-.slide-fade-leave-to {
-  transform: translateX(100vw);
-  opacity: 0;
-}
 .menu-list {
     position: absolute;
     top: 0;
