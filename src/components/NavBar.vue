@@ -7,6 +7,12 @@ const menuOpen = ref(false)
 function toggleMenu() {
     menuOpen.value = !menuOpen.value
 }
+
+window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menuOpen.value) {
+        toggleMenu()
+    }
+})
 </script>
 
 <template>
