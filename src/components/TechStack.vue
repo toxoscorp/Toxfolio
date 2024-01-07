@@ -34,4 +34,15 @@ import TechStackIcon from './TechStackIcon.vue';
     align-items: center;
     width: 25%;
 }
+
+@media (max-width: 1080px) {
+    .stack {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+}
 </style>
