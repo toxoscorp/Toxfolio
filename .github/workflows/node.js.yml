@@ -18,4 +18,4 @@ jobs:
       with:
         username: 'toxoscorp'
         reponame: 'Toxfolio'
-        token: ${{ secrets.GITHUB_TOKEN }} #
+        token: ${{ secrets.GITHUB_TOKEN }}
