@@ -4,6 +4,9 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+
+
+
 jobs:
   build_vue:
     runs-on: ubuntu-latest
@@ -15,4 +18,4 @@ jobs:
       with:
         username: 'toxoscorp'
         reponame: 'Toxfolio'
-        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+        token: ${{ secrets.GITHUB_TOKEN }}
