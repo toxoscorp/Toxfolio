@@ -44,7 +44,8 @@ import PageSwitcher from '@/components/PageSwitcher.vue';
 </script>
 
 <template>
-  <div class="projects">
+  <Transition name="slide-fade">
+  <div class="projects" v-if="op">
     <h1>Projects</h1>
     <div class="projectsList">
       <ProjectCard
@@ -54,6 +55,7 @@ import PageSwitcher from '@/components/PageSwitcher.vue';
       />
     </div>
   </div>
+  </Transition>
 </template>
 
 <style scoped>
