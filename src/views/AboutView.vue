@@ -6,6 +6,7 @@ import TechStack from '@/components/TechStack.vue';
 <template>
   <div class="about">
     <div class="content">
+      <TechStack />
       <div class="myLife">
         <h1>About Me</h1>
         <p>
@@ -19,7 +20,6 @@ import TechStack from '@/components/TechStack.vue';
           pursuing a Bachelor's degree in software engineering. I'm currently in my first year.
         </p>
       </div>
-      <TechStack />
     </div>
   </div>
 </template>
@@ -41,6 +41,6 @@ h1 {
 
 .content {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 2fr 3fr;
 }
 </style>

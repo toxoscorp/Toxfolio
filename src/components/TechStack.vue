@@ -32,6 +32,6 @@ import TechStackIcon from './TechStackIcon.vue';
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 25%;
 }
 </style>
