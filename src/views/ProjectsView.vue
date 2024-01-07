@@ -28,6 +28,19 @@ const projects = [
         link: "https://github.com/toxoscorp"
     }
 ]
+import { ref } from 'vue';
+
+const op = ref(false);
+const ps = ref(false);
+
+setTimeout(() => {
+  op.value = true;
+}, 1);
+setTimeout(() => {
+  ps.value = true;
+}, 200);
+
+import PageSwitcher from '@/components/PageSwitcher.vue';
 </script>
 
 <template>

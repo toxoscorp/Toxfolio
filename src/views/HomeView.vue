@@ -2,6 +2,8 @@
 import Title from '@/components/Title.vue'
 import SocialMediaBar from '@/components/SocialMediaBar.vue';
 import { NavArrowDown } from '@iconoir/vue';
+
+import PageSwitcher from '@/components/PageSwitcher.vue';
 </script>
 
 <template>
@@ -9,6 +11,7 @@ import { NavArrowDown } from '@iconoir/vue';
     <SocialMediaBar />
     <Title msg="Tristan Robichaud" subMsg="Software Engineer Student At The University of Ottawa" />
   </main>
+  <PageSwitcher page="/about" height="100"/>
 </template>
 
 <style scoped>
