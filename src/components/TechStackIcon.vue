@@ -27,7 +27,7 @@ defineProps({
   width: 50px;
   height: 50px;
   margin: 0 auto;
-  border-radius: 50%;
+  border-radius: 50px;
   overflow: hidden;
   background-color: var(--color-background-soft);
   display: flex;

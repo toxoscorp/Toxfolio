@@ -28,10 +28,24 @@ const projects = [
         link: "https://github.com/toxoscorp"
     }
 ]
+import { ref } from 'vue';
+
+const op = ref(false);
+const ps = ref(false);
+
+setTimeout(() => {
+  op.value = true;
+}, 1);
+setTimeout(() => {
+  ps.value = true;
+}, 200);
+
+import PageSwitcher from '@/components/PageSwitcher.vue';
 </script>
 
 <template>
-  <div class="projects">
+  <Transition name="slide-fade">
+  <div class="projects" v-if="op">
     <h1>Projects</h1>
     <div class="projectsList">
       <ProjectCard
@@ -41,6 +55,7 @@ const projects = [
       />
     </div>
   </div>
+  </Transition>
 </template>
 
 <style scoped>
