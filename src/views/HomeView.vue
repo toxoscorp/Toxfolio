@@ -1,6 +1,7 @@
 <script setup>
 import Title from '@/components/Title.vue'
 import SocialMediaBar from '@/components/SocialMediaBar.vue';
+import { NavArrowDown } from '@iconoir/vue';
 </script>
 
 <template>

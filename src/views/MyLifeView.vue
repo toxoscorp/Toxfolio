@@ -1,7 +1,13 @@
 <script setup>
-import TheWelcome from '@/components/TheWelcome.vue';
+import MyLife from '@/components/MyLife.vue';
 </script>
 
 <template>
-  <TheWelcome />
+  <div class="myLife">
+    <h1>My Life</h1>
+    <MyLife />
+  </div>
 </template>
+
+<style scoped>
+</style>

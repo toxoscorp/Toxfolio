@@ -23,6 +23,11 @@ const router = createRouter({
       component: () => import('../views/MyLifeView.vue')
     },
     {
+      path: '/projects',
+      name: 'projects',
+      component: () => import('../views/ProjectsView.vue')
+    },
+    {
       path: '/:catchAll(.*)',
       name: 'not-found',
       component: () => import('../views/NotFoundView.vue')
