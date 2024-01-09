@@ -1,25 +1,25 @@
 <script setup>
-import Title from '@/components/Title.vue'
-import SocialMediaBar from '@/components/SocialMediaBar.vue';
-import { NavArrowDown } from '@iconoir/vue';
-
-import PageSwitcher from '@/components/PageSwitcher.vue';
+import Home from '@/components/sections/Home.vue';
+import About from '@/components/sections/About.vue';
+import Life from '@/components/sections/Life.vue';
+import Projects from '@/components/sections/Projects.vue';
 </script>
 
 <template>
-  <main>
-    <SocialMediaBar />
-    <Title msg="Tristan Robichaud" subMsg="Software Engineer Student At The University of Ottawa" />
-  </main>
-  <PageSwitcher page="/about" height="100"/>
+  <div class="main">
+    <Home />
+    <About />
+    <Life />
+    <Projects />
+  </div>
 </template>
 
 <style scoped>
-main {
+.main {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   justify-content: center;
-  width: 80vw;
+  background-color: var(--color-background);
 }
 </style>
