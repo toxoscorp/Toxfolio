@@ -18,5 +18,6 @@ import SocialMediaBar from '@/components/SocialMediaBar.vue';
   justify-content: center;
   width: 80vw;
   height: 100vh;
+  background-color: red;
 }
 </style>

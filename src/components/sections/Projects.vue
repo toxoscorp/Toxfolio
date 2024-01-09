@@ -47,23 +47,23 @@ setTimeout(() => {
 setTimeout(() => {
   ps.value = true;
 }, 200);
-
-import PageSwitcher from '@/components/PageSwitcher.vue';
 </script>
 
 <template>
-  <Transition name="slide-fade">
-    <div class="projects" v-if="op">
-      <h1>Projects</h1>
-      <div class="projectsList">
-        <ProjectCard
-          v-for="(project, index) in projects"
-          :key="index"
-          :project="project"
-        />
+  <div class="projects">
+    <Transition name="slide-fade">
+      <div class="projects-inside" v-if="op">
+        <h1>Projects</h1>
+        <div class="projectsList">
+          <ProjectCard
+            v-for="(project, index) in projects"
+            :key="index"
+            :project="project"
+          />
+        </div>
       </div>
-    </div>
-  </Transition>
+    </Transition>
+  </div>
 </template>
 
 <style scoped>
@@ -78,7 +78,10 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  width: 80vw;
+  background-color: green;
+  overflow: hidden;
 }
 .projectsList {
   display: grid;

@@ -70,6 +70,8 @@ h1 {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 80vw;
+  background-color: blue;
 }
 
 .content {

@@ -16,16 +16,20 @@ import PageSwitcher from '@/components/PageSwitcher.vue';
 </script>
 
 <template>
-  <Transition name="slide-fade">
-  <div class="life" v-if="op">
-    <h1>My Life</h1>
-    <MyLife />
+    <div class="life">
+        <Transition name="slide-fade">
+        <div class="life-inside" v-if="op">
+            <h1>My Life</h1>
+            <MyLife />
+        </div>
+        </Transition>
   </div>
-  </Transition>
 </template>
 
 <style scoped>
 .life {
     height: 100vh;
+    width: 80vw;
+    background-color: yellow;
 }
 </style>
