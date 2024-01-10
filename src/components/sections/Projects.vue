@@ -47,12 +47,15 @@ setTimeout(() => {
 setTimeout(() => {
   ps.value = true;
 }, 200);
+defineProps({
+  inView: Boolean
+})
 </script>
 
 <template>
   <div class="projects">
     <Transition name="slide-fade">
-      <div class="projects-inside" v-if="op">
+      <div class="projects-inside" v-if="inView">
         <h1>Projects</h1>
         <div class="projectsList">
           <ProjectCard
@@ -80,7 +83,7 @@ h1 {
   justify-content: center;
   min-height: 100vh;
   width: 80vw;
-  background-color: green;
+  /* background-color: green; */
   overflow: hidden;
 }
 .projectsList {

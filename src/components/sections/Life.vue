@@ -13,12 +13,15 @@ setTimeout(() => {
 }, 200);
 
 import PageSwitcher from '@/components/PageSwitcher.vue';
+defineProps({
+  inView: Boolean
+})
 </script>
 
 <template>
     <div class="life">
         <Transition name="slide-fade">
-        <div class="life-inside" v-if="op">
+        <div class="life-inside" v-if="inView">
             <h1>My Life</h1>
             <MyLife />
         </div>
@@ -30,6 +33,6 @@ import PageSwitcher from '@/components/PageSwitcher.vue';
 .life {
     height: 100vh;
     width: 80vw;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 </style>

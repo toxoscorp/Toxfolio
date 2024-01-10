@@ -50,14 +50,10 @@ onUnmounted(() => {
 
 <template>
   <div class="main">
-    <Home v-if="home" />
-    <Blank v-else/>
-    <About v-if="about" />
-    <Blank v-else/>
-    <Life v-if="life" />
-    <Blank v-else/>
-    <Projects v-if="projects"/>
-    <Blank v-else/>
+    <Home :in-view="home" />
+    <About :in-view="about" />
+    <Life :in-view="life" />
+    <Projects :in-view="projects"/>
   </div>
   <!-- <div class="pageScroll"></div> -->
 </template>
@@ -68,7 +64,7 @@ onUnmounted(() => {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-background);
+  /* background-color: var(--color-background); */
 }
 
 .pageScroll {
@@ -77,7 +73,7 @@ onUnmounted(() => {
   left: 0;
   width: 100%;
   height: 400vh;
-  background-color: var(--color-background);
+  /* background-color: var(--color-background); */
   z-index: -1;
 }
 </style>

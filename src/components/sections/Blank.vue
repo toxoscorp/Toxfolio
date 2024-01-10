@@ -6,6 +6,6 @@
 .blank {
     height: 100vh;
     width: 80vw;
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.164);
 }
 </style>

@@ -16,12 +16,15 @@ setTimeout(() => {
 }, 200);
 
 import PageSwitcher from '@/components/PageSwitcher.vue';
+defineProps({
+  inView: Boolean
+})
 </script>
 
 <template>
   <div class="about">
     <Transition name="slide-fade">
-      <div class="content" v-if="op">
+      <div class="content" v-if="inView">
         <TechStack />
         <div class="myLife">
             <h1>About Me</h1>
@@ -71,7 +74,7 @@ h1 {
   justify-content: center;
   height: 100vh;
   width: 80vw;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .content {
