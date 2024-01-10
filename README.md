@@ -43,3 +43,4 @@ The libraries used in this project are also subject to their respective licenses
 - [ ] Add Top Projects
 - [ ] Add Missing CSS
 - [ ] Fix Project Cards CSS
+- [ ] Change Menu From Multiple Pages to Single Page
