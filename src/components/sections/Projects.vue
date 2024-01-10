@@ -22,7 +22,7 @@ const projects = [
         name: "Project 1",
         description: "This is a project",
         date: "2021-09-01",
-        img: "https://picsum.photos/500/300",
+        img: "https://picsum.photos/640/400",
         link: "https://github.com/toxoscorp",
         textColor: "#000000",
         color: "#3ecd5e"
@@ -47,23 +47,26 @@ setTimeout(() => {
 setTimeout(() => {
   ps.value = true;
 }, 200);
-
-import PageSwitcher from '@/components/PageSwitcher.vue';
+defineProps({
+  inView: Boolean
+})
 </script>
 
 <template>
-  <Transition name="slide-fade">
-  <div class="projects" v-if="op">
-    <h1>Projects</h1>
-    <div class="projectsList">
-      <ProjectCard
-        v-for="(project, index) in projects"
-        :key="index"
-        :project="project"
-      />
-    </div>
+  <div class="projects">
+    <Transition name="slide-fade">
+      <div class="projects-inside" v-if="inView">
+        <h1>Projects</h1>
+        <div class="projectsList">
+          <ProjectCard
+            v-for="(project, index) in projects"
+            :key="index"
+            :project="project"
+          />
+        </div>
+      </div>
+    </Transition>
   </div>
-  </Transition>
 </template>
 
 <style scoped>
@@ -78,6 +81,10 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
+  width: 80vw;
+  /* background-color: green; */
+  overflow: hidden;
 }
 .projectsList {
   display: grid;

@@ -15,7 +15,7 @@ import { RouterLink } from 'vue-router'
 
 <style scoped>
 .menu-list {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
