@@ -33,3 +33,13 @@ The content and design of the website are licensed under the [Creative Commons A
 ### License for Libraries
 
 The libraries used in this project are also subject to their respective licenses. Please refer to the documentation and source code of each library for more information.
+
+## TODO :
+
+- [ ] Add a favicon
+- [ ] Responsive design
+- [ ] Add Transitions between pages
+- [ ] Fix Page Gap when scrolling
+- [ ] Add Top Projects
+- [ ] Add Missing CSS
+- [ ] Fix Project Cards CSS
