@@ -3,7 +3,6 @@ import Home from '@/components/sections/Home.vue';
 import About from '@/components/sections/About.vue';
 import Life from '@/components/sections/Life.vue';
 import Projects from '@/components/sections/Projects.vue';
-import Blank from '@/components/sections/Blank.vue';
 
 import { ref } from 'vue';
 const home = ref(true);
