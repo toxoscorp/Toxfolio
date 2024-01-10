@@ -44,3 +44,4 @@ The libraries used in this project are also subject to their respective licenses
 - [ ] Add Missing CSS
 - [ ] Fix Project Cards CSS
 - [ ] Change Menu From Multiple Pages to Single Page
+- [ ] Add More Information To Project And Life Section In The Form of a Zooming Card
