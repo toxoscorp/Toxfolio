@@ -36,17 +36,6 @@ const projects = [
         color: "#3ecd5e"
     }
 ]
-import { ref } from 'vue';
-
-const op = ref(false);
-const ps = ref(false);
-
-setTimeout(() => {
-  op.value = true;
-}, 1);
-setTimeout(() => {
-  ps.value = true;
-}, 200);
 defineProps({
   inView: Boolean
 })
