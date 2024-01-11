@@ -1,8 +1,9 @@
 <script setup>
 import MyLife from '@/components/MyLife.vue';
 
-defineProps({
-  inView: Boolean
+const props = defineProps({
+  inView: Boolean,
+  heV: Number
 })
 
 const cards = [
@@ -45,10 +46,10 @@ const cards = [
 </script>
 
 <template>
-    <div class="life">
+    <div class="life" ref="element" :style="{ '--hvl':heV+'px'}">
         <Transition name="slide-fade">
         <div class="life-inside" v-if="inView">
-            <h1>My Life</h1>
+            <h1>My Life {{ heV }}</h1>
             <MyLife :cards="cards" />
         </div>
         </Transition>
@@ -64,7 +65,7 @@ const cards = [
   box-sizing: border-box;
 }
 .life {
-  min-height: 190vh;
+  min-height: max(100vh, var(--hvl));
 }
 .life-inside {
   display: grid;

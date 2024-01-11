@@ -36,8 +36,23 @@ import { RouterLink } from 'vue-router'
     justify-content: space-around;
     height: 80vh;
 }
-.menu-list ul li {
+.menu-list ul li a {
     padding: 0.5rem 1rem;
     border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list ul li a:hover {
+    background-color: var(--color-background-mute);
+    color: var(--color-header);
+    border-bottom: 1px solid var(--color-header);
 }
 </style>

@@ -3,12 +3,13 @@ import Title from '@/components/Title.vue'
 import SocialMediaBar from '@/components/SocialMediaBar.vue';
 
 defineProps({
-  inView: Boolean
+  inView: Boolean,
+  heV: Number
 })
 </script>
 
 <template>
-  <div class="home">
+  <div class="home" :style="{ '--hvh':heV+'px'}">
     <Transition name="home">
       <div v-if="inView" class="home-inside">
         <SocialMediaBar />

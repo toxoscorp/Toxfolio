@@ -38,9 +38,8 @@ The libraries used in this project are also subject to their respective licenses
 
 - [ ] Add a favicon
 - [ ] Responsive design
-- [ ] Add Transitions between pages
-- [ ] Fix Page Gap when scrolling
 - [ ] Add Top Projects
 - [ ] Add Missing CSS
 - [ ] Fix Project Cards CSS
 - [ ] Change Menu From Multiple Pages to Single Page
+- [ ] Add More Information To Project And Life Section In The Form of a Zooming Card
