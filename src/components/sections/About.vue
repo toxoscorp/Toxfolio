@@ -1,28 +1,27 @@
-
-import { h } from 'vue';
 <script setup>
+import { h } from 'vue';
 import { RouterLink } from 'vue-router';
 import TechStack from '@/components/TechStack.vue';
+const props = defineProps({
+  inView: Boolean,
+  heV: Number
+})
+
+import { onMounted } from 'vue';
 import { ref } from 'vue';
 
-const op = ref(false);
-const ps = ref(false);
-
-setTimeout(() => {
-  op.value = true;
-}, 1);
-setTimeout(() => {
-  ps.value = true;
-}, 200);
-
-import PageSwitcher from '@/components/PageSwitcher.vue';
-defineProps({
-  inView: Boolean
+const aboutHeight = ref(0);
+onMounted(() => {
+  // var tmp = props.inView;
+  // props.inView = true;
+  // aboutHeight.value = document.querySelector('.about').offsetHeight;
+  // props.inView = tmp;
 })
+
 </script>
 
 <template>
-  <div class="about">
+  <div class="about"  :style="{ '--hva':heV+'px'}">
     <Transition name="slide-fade">
       <div class="content" v-if="inView">
         <TechStack />
@@ -72,7 +71,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: max(50vh, var(--hva));
   width: 80vw;
   /* background-color: blue; */
 }

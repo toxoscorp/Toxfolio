@@ -4,55 +4,100 @@ import About from '@/components/sections/About.vue';
 import Life from '@/components/sections/Life.vue';
 import Projects from '@/components/sections/Projects.vue';
 
-import { ref } from 'vue';
+import { h, ref } from 'vue';
+import { useElementSize } from '@vueuse/core';
+
+const hc = ref(null);
+const ac = ref(null);
+const lc = ref(null);
+const pc = ref(null);
+
+var homeH = ref(0);
+var aboutH = ref(0);
+var lifeH = ref(0);
+var projectsH = ref(0);
+
+const hh = useElementSize(hc).height;
+const ah = useElementSize(ac).height;
+const lh = useElementSize(lc).height;
+const ph = useElementSize(pc).height;
+
 const home = ref(true);
-const about = ref(false);
-const life = ref(false);
-const projects = ref(false);
+const about = ref(true);
+const life = ref(true);
+const projects = ref(true);
 
 import { onMounted, onUnmounted } from 'vue';
 
 const scrollHandler = () => {
-  const scroll = window.scrollY;
-  if (scroll < 0.5 * window.innerHeight) {
+  var scroll = window.scrollY;
+  console.log(scroll);
+  console.log(homeH.value);
+  console.log(aboutH.value);
+  console.log(lifeH.value);
+  console.log(projectsH.value);
+
+  if (scroll <= homeH.value * 0.5){
     home.value = true;
-    about.value = false;
-    life.value = false;
-    projects.value = false;
-  } else if (scroll < 1.5 * window.innerHeight) {
-    home.value = false;
-    about.value = true;
-    life.value = false;
-    projects.value = false;
-  } else if (scroll < 2.5 * window.innerHeight) {
-    home.value = false;
-    about.value = false;
-    life.value = true;
-    projects.value = false;
   } else {
     home.value = false;
-    about.value = false;
-    life.value = false;
-    projects.value = true;
   }
-};
+
+  if (scroll >= homeH.value * 0.25 && scroll <= homeH.value + aboutH.value * 0.25){
+    about.value = true;
+  } else {
+    about.value = false;
+  }
+
+  if (scroll >= homeH.value + aboutH.value * 0.1 && scroll <= homeH.value + aboutH.value + lifeH.value * 0.75){
+    life.value = true;
+  } else {
+    life.value = false;
+  }
+
+  if (scroll >= homeH.value + aboutH.value + lifeH.value * 0.5 && scroll <= homeH.value + aboutH.value + lifeH.value + projectsH.value * 0.5){
+    projects.value = true;
+  } else {
+    projects.value = false;
+  }
+}
+
+const resizeHandler = () => {
+  window.location.reload();
+}
 
 onMounted(() => {
+  homeH.value = hh.value;
+  aboutH.value = ah.value;
+  lifeH.value = lh.value;
+  projectsH.value = ph.value;
+
+  about.value = false;
+  life.value = false;
+  projects.value = false;
+
+  console.log(homeH.value);
+  console.log(aboutH.value);
+  console.log(lifeH.value);
+  console.log(projectsH.value);
+
   window.addEventListener('scroll', scrollHandler);
+  window.addEventListener('resize', resizeHandler);
 });
 
 onUnmounted(() => {
   window.removeEventListener('scroll', scrollHandler);
+  window.removeEventListener('resize', resizeHandler);
 });
 
 </script>
 
 <template>
   <div class="main">
-    <Home :in-view="home" />
-    <About :in-view="about" />
-    <Life :in-view="life" />
-    <Projects :in-view="projects"/>
+    <Home :in-view="home" ref="hc" :he-v="homeH"/>
+    <About :in-view="about" ref="ac" :he-v="aboutH"/>
+    <Life :in-view="life" :he-v="lifeH" ref="lc"/>
+    <Projects :in-view="projects" ref="pc" :he-v="projectsH"/>
   </div>
   <!-- <div class="pageScroll"></div> -->
 </template>

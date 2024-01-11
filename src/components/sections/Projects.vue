@@ -37,12 +37,13 @@ const projects = [
     }
 ]
 defineProps({
-  inView: Boolean
+  inView: Boolean,
+  heV: Number
 })
 </script>
 
 <template>
-  <div class="projects">
+  <div class="projects" :style="{ '--hvp':heV+'px'}">
     <Transition name="slide-fade">
       <div class="projects-inside" v-if="inView">
         <h1>Projects</h1>
@@ -70,7 +71,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: max(100vh, var(--hvp));
   width: 80vw;
   /* background-color: green; */
   overflow: hidden;
