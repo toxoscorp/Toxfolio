@@ -94,10 +94,10 @@ onUnmounted(() => {
 
 <template>
   <div class="main">
-    <Home :in-view="home" ref="hc" :he-v="homeH"/>
-    <About :in-view="about" ref="ac" :he-v="aboutH"/>
-    <Life :in-view="life" :he-v="lifeH" ref="lc"/>
-    <Projects :in-view="projects" ref="pc" :he-v="projectsH"/>
+    <Home :in-view="home" ref="hc" :he-v="homeH" id="home"/>
+    <About :in-view="about" ref="ac" :he-v="aboutH" id="about"/>
+    <Life :in-view="life" :he-v="lifeH" ref="lc" id="life"/>
+    <Projects :in-view="projects" ref="pc" :he-v="projectsH" id="projects"/>
   </div>
   <!-- <div class="pageScroll"></div> -->
 </template>

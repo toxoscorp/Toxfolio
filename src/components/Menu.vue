@@ -5,10 +5,10 @@ import { RouterLink } from 'vue-router'
 <template>
         <div class="menu-list">
                 <ul>
-                    <li><RouterLink to="/">Home</RouterLink></li>
-                    <li><RouterLink to="/about">About</RouterLink></li>
-                    <li><RouterLink to="/myLife">My Life</RouterLink></li>
-                    <li><RouterLink to="/projects">Projects</RouterLink></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#life">My Life</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
         </div>
 </template>
