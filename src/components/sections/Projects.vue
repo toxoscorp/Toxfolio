@@ -3,35 +3,35 @@ import ProjectCard from '@/components/ProjectCard.vue';
 
 const projects = [
 {
-        name: "Project 1",
-        description: "This is a project",
+        name: "UOttawa Supermileage Team",
+        description: "I'm a software developer on the UOttawa Supermileage Team. We are a team of students from the University of Ottawa who are designing and building a fuel-efficient vehicle to compete in the Shell Eco-Marathon Americas competition.",
+        date: "2023-09-01",
+        img: "https://uottawa.sharepoint.com/sites/ES-202012-uOttawaSupermileageCompetitiveEngineeringTeam/Shared%20Documents/General/2022-2023/SEM2023%20Pictures%20and%20Videos/Good/SEM-8526.jpg?csf=1&web=1&e=aoW3Pt",
+        link: "https://uosupermileage.ca",
+        textColor: "#fff",
+        color: "#3ecd5e"
+    },{
+        name: "SFTP-Uploader-Maven-Plugin",
+        description: "Maven plugin to upload build artefact to a remote sftp server",
         date: "2021-09-01",
-        img: "https://cdn.discordapp.com/attachments/941862754178986054/1031353708614795304/DALLE_2022-10-16_19.21.00_-_all_white_cat_with_green_eyes_measuring_the_voltage_on_a_pcb_board.png?ex=65adadfd&is=659b38fd&hm=16947fce64eb6281c71fabcdb915b72811e303cc50160268d420e83d5233f1de&",
-        link: "https://github.com/toxoscorp",
+        img: "2023-01-06",
+        link: "https://github.com/toxoscorp/SFTP-Uploader-Maven-Plugin",
         textColor: "#000000",
         color: "#3ecd5e"
     },{
-        name: "Project 1",
-        description: "This is a project",
+        name: "CCC-Solutions",
+        description: "Canadian Computing Competition (CCC) problem solutions",
+        date: "2022-10-16",
+        img: "",
+        link: "https://github.com/toxoscorp/CCC-Solutions",
+        textColor: "#000000",
+        color: "#3ecd5e"
+    },{
+        name: "Toxfolio",
+        description: "My portfolio website",
         date: "2021-09-01",
         img: "",
-        link: "https://github.com/toxoscorp",
-        textColor: "#000000",
-        color: "#3ecd5e"
-    },{
-        name: "Project 1",
-        description: "This is a project",
-        date: "2021-09-01",
-        img: "https://picsum.photos/640/400",
-        link: "https://github.com/toxoscorp",
-        textColor: "#000000",
-        color: "#3ecd5e"
-    },{
-        name: "Project 1",
-        description: "This is a project",
-        date: "2021-09-01",
-        img: "https://picsum.photos/500/300",
-        link: "https://github.com/toxoscorp",
+        link: "https://portfolio.toxoscorp.com",
         textColor: "#000000",
         color: "#3ecd5e"
     }
