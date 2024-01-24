@@ -13,7 +13,7 @@ const projects = [
     },{
         name: "SFTP-Uploader-Maven-Plugin",
         description: "Maven plugin to upload build artefact to a remote sftp server",
-        date: "2021-09-01",
+        date: "2023-01-06",
         img: "2023-01-06",
         link: "https://github.com/toxoscorp/SFTP-Uploader-Maven-Plugin",
         textColor: "#000000",
@@ -29,7 +29,7 @@ const projects = [
     },{
         name: "Toxfolio",
         description: "My portfolio website",
-        date: "2021-09-01",
+        date: "2023-09-01",
         img: "",
         link: "https://portfolio.toxoscorp.com",
         textColor: "#000000",
